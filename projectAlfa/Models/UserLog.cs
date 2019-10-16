@@ -10,5 +10,10 @@ namespace projectAlfa.Models
         public int UserAccountId { get; set; }
         public DateTime LastLoginDate { get; set; }
         public DateTime LastJobApplyDate { get; set; }
+        /**
+        * This stores the actions performed on a give object. The client requires that the 
+        * application be able to log actions made by HR on an applicants record.
+        **/
+        public String ActionPerformed {get; set;}
     }
 }
